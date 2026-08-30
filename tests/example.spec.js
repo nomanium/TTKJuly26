@@ -1,5 +1,6 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
+//operations will be visible. By default it's unvisible by code headless:true.
 test.use({ headless: false });
 test('has title', async ({ page }) => {
   await page.goto('https://playwright.dev/');
