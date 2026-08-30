@@ -4,6 +4,7 @@ let motherAge = 22;
 console.log("Father's age:", fatherAge);
 console.log("Mother's age:", motherAge);
 
+//looks for true condition and executes the corresponding case block.
 switch (true) {
   case fatherAge > motherAge:
     console.log("Father is older than mother by", fatherAge - motherAge, "years.");
