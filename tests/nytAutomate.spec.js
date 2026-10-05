@@ -1,13 +1,3 @@
-// import { test, expect } from '@playwright/test';
-
-// test('test', async ({ page }) => {
-//   await page.goto('https://www.nytimes.com/');
-//   await page.getByRole('button', { name: 'open Lifestyle' }).click();
-//   await page.getByRole('link', { name: 'Travel' }).click();
-//   await page.locator('iframe[title="DataDome CAPTCHA"]').contentFrame().locator('.slider').click();
-//   await page.locator('iframe[title="DataDome CAPTCHA"]').contentFrame().locator('.slider').click();
-// });
-
 import { test, expect } from '@playwright/test';
 
 test('test', async ({ page }) => {

@@ -18,10 +18,12 @@ function isAnagram(s, t) {
     // Count characters in string s
     for (let char of s) {
         charCount[char] = (charCount[char] || 0) + 1;
+        console.log(`Counting char '${char}' in s:`, charCount[char]);
     }
 
     // Subtract character counts based on string t
     for (let char of t) {
+        console.log(`Checking char '${char}' in t:`, charCount[char]);
         if (!charCount[char]) {
             return false;
         }
@@ -30,6 +32,7 @@ function isAnagram(s, t) {
 
     // If all counts are zero, strings are anagrams
     for (let count of Object.values(charCount)) {
+        console.log(`Final count for character:`, count);
         if (count !== 0) {
             return false;
         }
@@ -38,4 +41,4 @@ function isAnagram(s, t) {
     return true;
 }
 console.log(isAnagram("anagram", "nagaram")); // true
-console.log(isAnagram("rat", "car")); // false
+// console.log(isAnagram("aab", "abb")); // false
