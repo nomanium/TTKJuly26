@@ -19,6 +19,12 @@ test('Signing up new user', async ({ page }) => {
     await page.getByRole('button', { name: 'Create my account' }).click();
     await expect(page.getByText('Success!')).toBeVisible();
     await page.getByRole('button', { name: 'OK' }).click();
-
-
 });
+
+test('Signing in new user', async ({ page })  =>{
+    await page.goto('https://qa.taltektc.com/index.html')
+    await page.getByRole('textbox',{name:'Email address or Student ID'}).fill('deletethis1@gmail.com')
+    await page.getByRole('textbox',{name:'Password'}).fill('Password123')
+    await page.getByRole('button',{name:'Log In'}).click()
+    await expect(page).toHaveURL('https://qa.taltektc.com/home.html')
+})
