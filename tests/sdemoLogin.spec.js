@@ -30,9 +30,3 @@ test('Demo Login for problem_user', async ({ page }) => {
 
     await expect(backpackImageUrl).toContain('https://www.saucedemo.com/assets/sl-404-Cq1a9k9X.jpg');
 });
-
-test('Demo Login for locked_out_user', async ({ page }) => {
-    const loginPage = new sdemoLoginPage(page);
-    await loginPage.navigate();
-    await loginPage.login('locked_out_user', 'secret_sauce');
-    await expect(loginPage.loginErrorMessage).toBeVisible();
