@@ -22,7 +22,7 @@ test('Demo Login for problem_user', async ({ page }) => {
     await loginPage.login('problem_user', 'secret_sauce');
      await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
 
-    //// advanced assertion 
+    //// advanced assertion to be worked on future projects.
     // // await expect(loginPage.backpackImage).toBeVisible();
     // const backpackImageUrl = await loginPage.backpackImage.evaluate(image => image.getAttribute('src')); //getting a timeout.
 

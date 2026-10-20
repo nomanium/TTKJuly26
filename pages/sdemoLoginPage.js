@@ -9,8 +9,6 @@ export class sdemoLoginPage {
         // this.backpackImageUrl = "https://www.saucedemo.com/assets/sl-404-Cq1a9k9X.jpg";
         this.bikeLightImage = page.getByRole('image', { name: 'Sauce Labs Bike Light' });
         // this.bikeLightImageUrl = "https://www.saucedemo.com/assets/sl-404-Cq1a9k9X.jpg"
-        // "https://www.saucedemo.com/assets/sl-404-Cq1a9k9X.jpg"
-        // "https://www.saucedemo.com/assets/sl-404-Cq1a9k9X.jpg";
     }
 async navigate() {
         await this.page.goto('https://www.saucedemo.com/');
