@@ -1,8 +1,7 @@
 import { test, expect } from '@playwright/test';
 import {sdemoLoginPage} from '../pages/sdemoLoginPage.js' ;
 import { LOGIN_MESSAGE } from '../constants/messages.js';
-import { expectErrorMessage } from '../utils/assertions.js';
-import { expectUrl } from '../utils/assertions.js';
+import { expectUrl, expectErrorMessage  } from '../utils/assertions.js';
 
 test.describe('SauceDemo Login Tests', () => {
     let loginPage;
